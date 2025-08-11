@@ -13,4 +13,22 @@ The repository includes:
 
 ---
 
-## Dataset Structure
+## Video Quality Categories
+The dataset is classified into three video quality categories based on encoding parameters.
+
+| Category       | Resolution   | Frame Rate | Entropy Coding | Motion Estimation   | CRF  | Preset     | Quality Level | File Size | Encoding Speed |
+|----------------|--------------|------------|----------------|---------------------|------|------------|--------------|-----------|----------------|
+| **High**       | 1920x1080    | 30 fps     | CABAC          | UMH + subq 10       | 18   | slow       | High         | Small     | Slow           |
+| **Medium**     | 1280x720     | 25 fps     | CABAC          | Hex                 | 28   | medium     | Medium       | Medium    | Medium         |
+| **Low**        | 640x360      | 15 fps     | CAVLC          | Zero                | 35   | ultrafast  | Low          | Large     | Very Fast      |
+
+---
+
+## Video Dataset Access
+The videos are hosted on YouTube for easy access and demonstration.
+
+- **High Quality**: [Watch on YouTube](https://youtu.be/zkM6UASHdPQ)
+- **Medium Quality**: [Watch on YouTube](https://youtu.be/ArZpNYl9fr8)
+- **Low Quality**: [Watch on YouTube](https://youtu.be/YZ0vb7mOdf8)
+
+---
