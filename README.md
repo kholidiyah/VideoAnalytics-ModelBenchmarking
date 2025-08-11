@@ -32,3 +32,26 @@ The videos are hosted on YouTube for easy access and demonstration.
 - **Low Quality**: [Watch on YouTube](https://youtu.be/YZ0vb7mOdf8)
 
 ---
+
+## Environment Setup
+
+This project was implemented and tested under the following environment:
+
+- **conda version**: 23.1.0  
+- **Python**: 3.9.23 (main experiments), Python 3.8 (DETR environment)  
+- **PyTorch** with CUDA 11.8 (`conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia`)  
+- **Detectron2**: `git clone https://github.com/facebookresearch/detectron2.git`  
+- **DETR**: `git clone https://github.com/facebookresearch/detr.git`  
+- **GPU**: NVIDIA GeForce RTX 5080  
+- **CUDA Version**: 12.9  
+- **Operating System**: Ubuntu 24.04.2 LTS  
+- **FFmpeg**: version 4.3, built with gcc 7.3.0 (crosstool-NG 1.23.0.449-a04d0)
+
+---
+
+## Encoding Script
+The `convert_quality.py` script is used to generate the High, Medium, and Low quality videos from a single input video using FFmpeg:contentReference[oaicite:1]{index=1}.
+
+Example usage:
+```bash
+python scripts/encoding/convert_quality.py
